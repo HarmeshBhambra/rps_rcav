@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row_nav">
+        <div class="col-sm-offset-2 col-sm-8">
+          <div class="btn-group btn-group-justified" role="group" aria-label="...">
+          <a href="/rock" class="btn btn-primary" role="button">Play Rock</a>
+          <a href="/paper" class="btn btn-info" role="button">Play Paper</a>
+          <a href="/scissors" class="btn btn-primary" role="button">Play Scissors</a>
+        </div>
+        </div>
+    </div>
+    <div class="row_game">
+      <div class="col-sm-offset-2 col-sm-4">
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h2>Your Move: Scissors</h2>
+          </div>
+          <div class="panel-body">
+            <img class="image" src="/assets/images/rock.png">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="panel panel-danger">
+          <div class="panel-heading">
+            <h2>Computer's Move: <%= @computer_move %>
+            </h2>
+          </div>
+          <div class="panel-body">
+            <img class="image" src="/assets/images/<%= @computer_move %>.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row_result">
+      <div class="col-sm-offset-2 col-sm-8">
+        <div class="well well-lg">
+         <h1>
+           <span class="label label-<%= @color %>">
+             <%= @result %>
+           </span>
+         </h1>
+        </div>
+      </div>
+    </div>
+</div>

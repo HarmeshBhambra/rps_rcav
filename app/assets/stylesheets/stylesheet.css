@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+}
+
+h2 {
+  font-size: 16pt;
+}
+
+.row_nav {
+  padding: 30px;
+}
+
+.row_game {
+  padding: 30px;
+}
+
+.row_result {
+  padding: 30px;
+}
+
+.image {
+  height: 250pt;
+}
+
+h2 {
+  text-transform: capitalize;
+}
